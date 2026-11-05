@@ -1,0 +1,40 @@
+
+# Dependencies
+/node_modules
+
+# Next.js
+/.next
+/out
+/build
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local certificates / secrets
+*.pem
+*.key
+
+# Backup files
+*.zip
+*.rar
+*.7z
+
+# Local environment
+.env
+.env.*
+!.env.example

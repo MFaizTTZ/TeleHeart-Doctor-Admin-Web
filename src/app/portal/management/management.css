@@ -1,0 +1,211 @@
+
+/* Tahap 5 - Manajemen Dokter */
+
+.th-management {
+  width: 100%;
+  max-width: 1250px;
+}
+
+.th-management-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 26px;
+}
+
+.th-management-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.th-management-toolbar p {
+  color: #829a95;
+  font-size: 13px;
+  margin: 7px 0 0;
+}
+
+.th-management-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.th-info-line {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e4eeeb;
+}
+
+.th-info-line span {
+  color: #829a95;
+  font-size: 12px;
+}
+
+.th-info-line strong {
+  color: #274f49;
+  font-size: 14px;
+}
+
+.th-online-indicator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.th-online-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #b4c3bf;
+}
+
+.th-online-dot.active {
+  background: #2bb77a;
+}
+
+.th-tariff-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.th-tariff-card {
+  display: grid;
+  gap: 14px;
+  background: #f1f8f5;
+  border: 1px solid #dcece5;
+  border-radius: 15px;
+  padding: 22px;
+}
+
+.th-tariff-card span {
+  font-size: 13px;
+  color: #69877e;
+}
+
+.th-tariff-card strong {
+  font-size: 22px;
+  color: #236c64;
+}
+
+.th-doctor-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.th-doctor-entry {
+  padding: 22px;
+  border: 1px solid #e1eeea;
+  border-radius: 16px;
+  background: #fcfefd;
+}
+
+.th-doctor-entry h4 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.th-doctor-details p {
+  margin: 7px 0;
+}
+
+.th-management-status {
+  display: inline-block;
+  background: #e9f5f1;
+  color: #28776c;
+  padding: 7px 12px;
+  border-radius: 99px;
+  margin-top: 9px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.th-doctor-review {
+  border-top: 1px solid #e1eeea;
+  padding-top: 18px;
+  margin-top: 20px;
+}
+
+.th-doctor-review label {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.th-doctor-review input {
+  margin-top: 4px;
+}
+
+.th-management-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.th-danger {
+  border: 1px solid #efc9ca;
+  background: #fff0f0;
+  color: #bd444c;
+  padding: 12px 18px;
+  border-radius: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.th-management-notice {
+  background: #e8f8ee;
+  color: #23754a;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+
+.th-management-empty {
+  max-width: 420px;
+  margin: 100px auto;
+  padding: 32px;
+  text-align: center;
+}
+
+.th-management-empty a {
+  color: #28776c;
+  font-weight: 700;
+}
+
+.th-mgmt-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 15px;
+  color: #236c64;
+  text-decoration: none;
+  border-radius: 11px;
+  margin-top: 10px;
+  background: #eaf6f2;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .th-management-grid,
+  .th-tariff-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .th-management-top,
+  .th-management-toolbar {
+    flex-wrap: wrap;
+  }
+}
