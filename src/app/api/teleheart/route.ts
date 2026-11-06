@@ -304,7 +304,7 @@ export async function POST(request: NextRequest) {
           );
         }
 
-        payload = { body: message };
+        payload = { message };
       }
 
       // TOLAK KONSULTASI
